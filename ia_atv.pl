@@ -89,6 +89,9 @@ resp6 :- pais(brasil, Area, Popu),
   Densi is Popu / Area,
   writeln(Densi).
 
+
+% regra para questao 7
+
 resp7 :- forall((
     pais(india, _, Popu),
     pais(N, _, P),
