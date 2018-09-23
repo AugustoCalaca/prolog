@@ -30,12 +30,10 @@ resp2(Cod) :- forall(codvenda(Cod, X), writeln(X)).
 
 % regra para questao 3
 
-resp3 :- valorvenda(
-  Cod, 11235.14),
+resp3 :- valorvenda(Cod, 11235.14),
   codvenda(Cod2, Cod),
   codvendedor(N, Cod2),
-  writeln([ Cod2, N ]
-).
+  writeln([ Cod2, N ]).
 
 
 % fatos questoes 4 a 5
